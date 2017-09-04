@@ -1,0 +1,69 @@
+\documentclass[11pt,twocolumn]{scrartcl}
+
+\usepackage[margin=2cm]{geometry}
+\setlength{\parskip}{1mm}
+\setlength{\parindent}{10mm}
+
+\title{\textbf{Metastudy on the state of the art of the classification of cry-types}}
+\author{Franz Anders}
+\date{}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Medical point of view}
+
+\subsection{Crying as a Sign, a Sympton \& a Signal (2000)}
+
+\subsubsection*{Summary:} 
+
+It is \emph{not} possible to infer the cause by the cry characteristics. Crying is described as a "graded signal" wich expresesses the level of distress of the infant. In combination with contextual informations, the level of distress expressed can aid in identifying the cause.\cite{Gustafson2000}
+
+
+\subsubsection*{Detailed:}
+
+"We return now to the question asked at the outset: Are cry sounds of human infants unique to the eliciting condition - for example, hunger- pain- startle, or fatigue - and are they perceived uniformly and accuratly as such by their caregivers? Such notions are widely shared in the clinical, research and popular literatures on infant crying, and many parents and other caregivers believe the answer to be "Yes".  Nonethelesss, we have found little empirical support for such notions, and a great deal of evidence against them. The fundamental problem is that the sounds themselves appear not to be unitary and isomporphic with respect to discrete causes. [...]
+
+Crying is different from other soundmaking and thus alerts the caregiver to the infant's distress. [...] Beyond alerting the caregiver, the sounds of crying convey level of distress or urgency of need. The probability of latency of a caregiver's response are thus affected. Level of distress per se appears to offer some clue as to the specific cause of crying. Coupled with contextual information - the infant's facial expression and bodily movements, surrounding events and caregiving schedule - the sound of crying may be highly informative with respect to a discrete cause. [...]
+
+Nonetheless, it may be that not all crying has definable causes even with the help of contextual infromation. [...] Spock and Rothenberg(1985) note that almost all young infants get into "fretful periods" that cannot be precisely explained." \cite{Gustafson2000}
+
+\subsection{Pain in Neonates and Infants (2007)}
+
+\subsubsection*{Summary:} 
+Cry offers information about the infants levels of distress, not to the cause of the cry.\cite{Stevens2006} Crying is also not per se linked to pain and seems to offer high sensitivity, but low specificity. For example, infant colic leads to crying at 
+
+\subsubsection*{Detailed:}
+
+"Given there is no biologic gold standard for assessing pain in infants (Warnock and LAnder 2004), physiological, biobehavioural and behavioural indicators need to be considered as surrogate markers for self-report. [...]
+
+Cry is a behavioural indicator of pain in infants that is frequently described in terms of presence or absence, temportal characteristics, amplitude and/or pitch. The temporal domain of cry includes latency to cry, duration of expiratory and inspirator5y cry, duratino of pause between cries and regulation or rythm of the cry bout. Amplitude is a measure of cry loudness, and pitch (measured as fundamental frequency) is the harmonic feature that includes variability, melody patterns, jitters, phonics and energy. Procedural-related cries are descrbied as intense and high-pitched, which signals the need for intervention. The cry occurs immediately or very shortly after the painful stimulus and can usually be distinguished from the cries due to hunger, anger or tiredness. Altough less understood, postoperative and chronic pain cries have been described as longer in duration and occuring with shorter latency than procedural-related cries.[...] 
+
+Mature, healthy infants who are awake will elicit a robust cry in response to pain. Alternatively, preterm, acutely ill infants who are too immature or unwell may not cry and ventilated infants cannot cry in response to pain. Although cry can provide valuable information when it occurs, its absence cannot discount pain.[...]
+
+Cues, such as an infant's cry, do not offer specific information about an infnt's pain per se but rather offer information about the intensity of the distress.
+" \cite{Stevens2006}
+
+"In 1962, Brazelton published a seminal paper that helped to establish the typical pattern of infant crying behaviours. Numerous susbsequent studies supported those initial findings. Nomrally, infants cry more during the first 3 months than at any other age. The peak amount of crying occurs durint the second month, with the start of this incrase a 2 weeks and usually a return to baseline by 4 months. [...] There is an observable cluster of crying behaviour in the late afternoon and evening hours, although some infants cry more at various tims of day, reflecting some variablility in this diurnal pattern.[...]
+
+Some evidence exists that the crying of infants whith colic may have different acoustic structures in some circumstances that parents can detect. However, there is little evidence of an acoustically distinct cry type (a 'colic' cry). Indeed, there has been considerable debate about whether there are cry types at all (pain cries, hunger cries, fatigue cries). Currently, the evidence is strongest that the infant cry is a graded signal, reflecting intensity of the stimulus and infant's response, but not specific to the causal stimulus (Gustafson et al. 2000). 
+
+Infant colic is a cluster of behaviours predominated by crying that occurs during the first 3 months of life. In a small percentage of cases, symptoms can persist into the fourth month or later. [...] The incidence of infant colic in the overall population lies somewhere between 10\& and 40\%, depending on how it is defined. Most definitions include crying as the core symptom. Some of this crying occurs in extended bouts when the infant is resistant to soothing. During such bouts, infants may present with behaviours that is often intepreted as a manifestation of pain: clenching of fists, flexing of legs over the abdomen, back arching, grimacing and facial redding. [...]
+
+In an attempt to better quantify the observed behaviours, Wessel et al. introduced criteria for colic most commonly referred to as the 'rules of threes' in 1954. These criteria are met when an infant cires for:
+
+\begin{itemize}
+\item $\geq$ 3 hours per day
+\item $\geq$ 3 days per week
+\item $\geq$ 3 weeks 
+\end{itemize}
+
+[...] Thus the common assumption that pain is the cause of infant colic simply remains unproven, with most evidence in the literature suggesting no such causality. Indeed, even the association of infant colic with increased physiologic stress has not been demonstrated. There may be increasing evidence for the opposite to be true, with decreased secretion of cortisol noted in infants with colic during perios of increased crying (Gosh and Barr 2004)
+
+"\cite{Shuvo2006}
+
+\bibliography{crytypes_metastudy}
+\bibliographystyle{alpha}
+
+\end{document}
