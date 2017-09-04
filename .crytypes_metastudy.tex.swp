@@ -1,6 +1,6 @@
 \documentclass[11pt,twocolumn]{scrartcl}
 
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=2cm, bmargin=3.5cm]{geometry}
 \setlength{\parskip}{1mm}
 \setlength{\parindent}{10mm}
 
@@ -59,9 +59,26 @@ In an attempt to better quantify the observed behaviours, Wessel et al. introduc
 \item $\geq$ 3 weeks 
 \end{itemize}
 
-[...] Thus the common assumption that pain is the cause of infant colic simply remains unproven, with most evidence in the literature suggesting no such causality. Indeed, even the association of infant colic with increased physiologic stress has not been demonstrated. There may be increasing evidence for the opposite to be true, with decreased secretion of cortisol noted in infants with colic during perios of increased crying (Gosh and Barr 2004)
+[...] Thus the common assumption that pain is the cause of infant colic simply remains unproven, with most evidence in the literature suggesting no such causality. Indeed, even the association of infant colic with increased physiologic stress has not been demonstrated. There may be increasing evidence for the opposite to be true, with decreased secretion of cortisol noted in infants with colic during perios of increased crying (Gosh and Barr 2004) "\cite{Shuvo2006}
 
-"\cite{Shuvo2006}
+\section{Machine Learning}
+
+\subsection{DAG-SVM based infant cry classification system using sequential forward floating feature selection}
+
+\subsubsection*{Summary:} 
+The research-team trained a SVM to classify infant cries into the classes "pain, hunger or sleepy". They recorded the signals themselfes. On the basis of 4 Features, they claim to have reached an average accuracy of 92.1771\% . \cite{chang2017dag}
+
+\subsubsection*{Details:}
+
+The researchers recorded audiosignals of crying infants in a hospital in Taiwan. A total of 450 signals were recorded, evenly distrubted between the three classes. Each signal was devided into short frames a 32ms. Frames belongig to Cry-Units were isolated by simple Energy-Threshold, removing any Cry-Units shorter than 250ms. For each frame, features like RMS, ZCR or MFCC etc. were extracted. A SVM in combination with an FFS-Algorithm was employed to select 4 Features "Peak, Contrast, Pitch and Spectral Centroid" which contributed most to the classification. Using these 4 Features, the dataset was devided into 50\% training and 50\& test-data. The final average testing-accuracy was claimed to reach 92.1771\%
+
+\subsubsection*{Assessment:}
+
+It is highly unlikely that a system which classifies cries on the basis of static features which does not take into account any temporal informations whatsoever (neither in the process of feature-extraction nor in the classification-process) reaches a classification-rate of such hight. The distinction of the cries are exclusivly made on the basis of features of 32ms-long timeframes of the uterrances of the infant. Using the described technique, it would hardly be managable to employ a simple VAD-system. All techniques used were state-of-the-art of the 1980 and as such it is bafelling why no one else reached these classification-accuracies before.
+
+Even if the stated method would lead to the reported accuracy, it would still no be employable for an online-classifaciton. The signals were normalized in the preprocessing-state and the circumastances of the quality of the recordings seemed to have been good enough to employ a simple energy-threshold for Cry-Unit classification.
+
+As the produced classification-method uses as SVM on the basis of not-intuitivly understandable features, no inferences can be made on how humans could differentiate between the cry-types.
 
 \bibliography{crytypes_metastudy}
 \bibliographystyle{alpha}
