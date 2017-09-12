@@ -80,6 +80,14 @@ Even if the stated method would lead to the reported accuracy, it would still no
 
 As the produced classification-method uses as SVM on the basis of not-intuitivly understandable features, no inferences can be made on how humans could differentiate between the cry-types.
 
+\subsection{An infant emotion recognition system using visual and audio information} 
+
+\subsubsection*{Resumen:} 
+The chinese research-team build a emotion-recognition-system which uses video- and audiodata to classify recordings of infants into different Emtions. The classification of the audiosignals happens independently of the classification of the video signals. The detected emtions regarding the audiosignal were Pain, Anger, Hunger, Sleepiness, Cuddliness, Laughter and Silence. The classification happend by framing the signal into 32ms-signals, extracting MFCC-Features, training a SVM and classifiying framewise. The average accuracy reached 76.9\%.  \cite{chang2017dag}
+
+\subsubsection*{Opinion:}
+The classification-method very much resembles the research publicated by \cite{chang2017dag}, and suffers from the same pitfalls: It's hard to believe that a classification which does not take into account any temporal informations whatsover reaches the stated classification accuracy, seperating between 7 emotions that are nearly indistinguishable by humans.
+
 \bibliography{crytypes_metastudy}
 \bibliographystyle{alpha}
 
